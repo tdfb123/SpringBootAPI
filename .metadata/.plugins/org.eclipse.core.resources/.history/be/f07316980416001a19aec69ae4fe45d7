@@ -1,0 +1,14 @@
+package br.com.db1.db1start.bancoapi.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import br.com.db1.db1start.bancoapi.service.CidadeService;
+
+public class CidadeController {
+
+	@Autowired
+	private CidadeService cidadeService;
+	
+	
+	
+}
