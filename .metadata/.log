@@ -4801,3 +4801,8 @@ java.lang.Exception: The project description file (.project) for 'ContaCorrente'
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2019-12-03 11:40:56.666
 !MESSAGE executing callback sts4.classpath.hQsIXAVz SUCCESS [done]
+
+!ENTRY org.eclipse.core.resources 2 2 2019-12-03 13:45:20.406
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2019-12-03 13:45:20.406
+!MESSAGE The project description file (.project) for 'cidades-api' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
