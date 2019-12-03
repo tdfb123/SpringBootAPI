@@ -1,0 +1,25 @@
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.db1start.cidadesapi.domain.entity.Estado;
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class EstadoServiceTest {
+
+	
+	@Autowired
+	private EstadoService estadoService;
+	
+	@Test
+	public void test() {
+		Estado estado = estadoService.criar("Paraná");
+		
+		assertNotNull(estado);
+		System.out.println(estado.getId());
+	}
+
+}

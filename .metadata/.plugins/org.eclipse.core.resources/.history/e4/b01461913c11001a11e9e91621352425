@@ -1,0 +1,11 @@
+package com.db1start.cidadesapi.domain.entity;
+
+public class Conta {
+	Long id;
+	Agencia agencia;
+	Double saldo;
+	Cliente cliente;
+	EstadoConta estado;
+	
+	
+}

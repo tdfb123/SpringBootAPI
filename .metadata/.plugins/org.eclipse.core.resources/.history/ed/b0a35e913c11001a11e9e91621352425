@@ -1,0 +1,13 @@
+package com.db1start.cidadesapi.domain.entity;
+
+import java.util.List;
+
+public class Agencia {
+	Long id;
+	String numero;
+	String digito;
+	String banco;
+	Cidade cidade;
+	List<Conta>conta;
+	
+}

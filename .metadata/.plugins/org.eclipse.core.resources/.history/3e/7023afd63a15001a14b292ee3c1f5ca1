@@ -1,0 +1,23 @@
+package br.com.db1.db1start.bancoapi.entity;
+
+
+@RestController
+
+@Controller
+public class EstadoController {
+
+    @GetMapping("/estados")
+    public List<EstadoDTO> buscarTodosEstados() {
+        List<Estado> estados = estadoService.buscarTodosEstados();
+        List<EstadoDTO> listaDeRetorno = new ArrayList<>();
+        
+        estados.forEach(estado -> {
+        	EstadoDTO meuEstadoDto = EstadoAdapter.transformaEntidadeParaDTO(estado);
+        	listaDeRetorno.add(meuEstadoDto);
+        });
+        
+        
+        return listaDeRetorno;
+    
+    }
+}

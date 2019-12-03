@@ -1,0 +1,21 @@
+package com.db1start.cidadesapi.service;
+
+public class EstadoServiceTest {
+
+@RunWith(SpringRunner.class)
+@SpringBootTest
+	
+	@Autowired
+	private EstadoService estadoService;
+	
+	@Test
+	public void test() {
+		Estado estado = estadoService.criar("Paraná");
+	
+		assertNotNull(estado);
+		System.out.println(estado.getId());	
+	}
+}
+	
+	
+}
